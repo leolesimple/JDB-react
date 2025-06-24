@@ -1,6 +1,7 @@
 # 📘 Journal de Bord – React + Tailwind
 
-Ce projet est une réécriture complète de mon journal de bord en **React** avec **TailwindCSS**. Il permet de documenter les actions menées au fil du temps, notamment dans le cadre d’un **stage**.
+Il est de retour, qui dit stage, dit journal de bord ! 📝
+Après le journal de bord en HTML/CSS/JS de 2021 (Stage de 3e), voici le journal de bord en **React** et **TailwindCSS** pour mon stage de première année en MMI.
 
 ---
 
