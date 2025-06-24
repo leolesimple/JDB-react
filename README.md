@@ -20,7 +20,7 @@ Après le journal de bord en HTML/CSS/JS de 2021 (Stage de 3e), voici le journal
 ## 🚀 Installation
 
 ```bash
-git clone https://github.com/votre-utilisateur/react-journal-bord.git
+git clone https://github.com/leolesimple/JDB-react.git
 cd react-journal-bord
 npm install
 npm run dev
