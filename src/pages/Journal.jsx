@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import JournalList from '../components/JournalList'
 import Modal from '../components/Modal'
 import JournalForm from '../components/JournalForm'
+import MorphModal from "./Anim.jsx";
 
 export default function Journal() {
     const [notes, setNotes] = useState(() => {
@@ -41,19 +42,24 @@ export default function Journal() {
                     ➕ Ajouter une note
                 </button>
 
-                <Modal isOpen={modalOpen} onClose={() => setModalOpen(false)}>
+                {/*<Modal isOpen={modalOpen} onClose={() => setModalOpen(false)}>
                     <JournalForm
                         onAdd={(note) => {
                             ajouterNote(note)
                             setModalOpen(false)
                         }}
                     />
-                </Modal>
+                </Modal>*/}
 
             </div>
 
             <JournalList notes={notes} onDelete={supprimerNote} />
             {modalOpen && <Modal onAdd={ajouterNote} onClose={() => setModalOpen(false)} />}
+
+            <MorphModal isOpen={modalOpen} onClose={() => setModalOpen(false)}>
+                <h2 className="text-2xl font-bold mb-4">Ajoutez une note ✍️</h2>
+                <JournalForm onAdd={ajouterNote} />
+            </MorphModal>
         </div>
     )
 }

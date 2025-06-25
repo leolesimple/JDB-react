@@ -11,6 +11,9 @@ export default function Navbar() {
                 <Link to="/about" className="text-sky-950 hover:underline dark:text-sky-300">
                     À propos
                 </Link>
+                <Link to="/modal" className="text-sky-950 hover:underline dark:text-sky-300">
+                    Animation
+                </Link>
             </div>
 
         </nav>
